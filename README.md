@@ -6,8 +6,3 @@
 - Python Flask
 - bootstrap
 - vanta.js (animations)
-
-###### To-Do
-- update projects section
-- add resume/contact functionality
-- finish design decisions
