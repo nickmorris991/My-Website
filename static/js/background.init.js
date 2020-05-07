@@ -1,3 +1,5 @@
+// vanta.js background settings and init
+
 VANTA.WAVES({
   el: "#vanta_background",
   mouseControls: false,
@@ -5,5 +7,8 @@ VANTA.WAVES({
   color: 0x2c3134,
   shininess: 10.00,
   waveHeight: 10.00,
-  waveSpeed: 0.5
+  waveSpeed: 0.8
 })
+
+
+

@@ -1,6 +1,20 @@
-h1 {
+.card-title {
     text-align: center;
-    color: red;
+}
+
+.header-card {
+    margin-top: 50px;
+    padding-left: 40%;
+}
+
+.info-card-table {
+    margin-top: 100px;
+    margin-left: 18%; 
+
+}
+
+.info-card {
+    margin-right: 50px;
 }
 
 .center {
@@ -15,5 +29,4 @@ h1 {
     width: 100%;
     top: 0px;
     left: 0px;
-    opacity: 1;
 }
