@@ -1,26 +1,7 @@
-.card-title {
-    text-align: center;
-}
-
-.header-card {
-    margin-top: 50px;
-    padding-left: 40%;
-}
-
-.info-card-table {
-    margin-top: 100px;
-    margin-left: 18%; 
-
-}
-
-.info-card {
-    margin-right: 50px;
-}
-
 .center {
-    display: block;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .background {
@@ -29,4 +10,31 @@
     width: 100%;
     top: 0px;
     left: 0px;
+}
+
+.header-card {
+    margin-top: 50px;
+}
+
+.info-card-table {
+    margin-top: 150px;
+}
+
+.info-card {
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.button {
+    background-color: rgb(255, 255, 255); /* Green */
+    border: none;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    width: 350px;
+    cursor: pointer;
+    border-radius: 12px;
 }
