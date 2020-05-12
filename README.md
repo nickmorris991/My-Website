@@ -5,4 +5,3 @@
 - js, html, css
 - Python Flask
 - bootstrap
-- vanta.js (animations)

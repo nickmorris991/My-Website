@@ -8,15 +8,15 @@ body {
     text-align: center;
 }
 
-.header-card {
-    margin-top: 50px;
+.primary-cd {
+    padding-top: 2%;
 }
 
-.info-card-table {
+.info-btn-table {
     margin-top: 100px;
 }
 
-.info-card {
+.info-btn {
     margin-right: 100px;
     margin-left: 100px;
 }
