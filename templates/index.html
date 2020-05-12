@@ -12,13 +12,14 @@
 
     <!-- Local CSS -->
     <link rel="stylesheet" href="static/css/index.css">
+    <link rel="stylesheet" href="static/css/background.animation.css">
 
-    <!-- Local JS -->
-    <script src="static/js/background.animation.js"></script>
-    <script src="static/js/index.redirects.js"></script>
+    <script src="static/js/index/redirects.js"></script>
   </head>
 
   <body>
+    <canvas id="anim-canvas"></canvas>
+    <script src="static/js/index/background.animation.js"></script>
     <section id="root">
       <div id="container">
         <!-- header card table -->
@@ -77,7 +78,6 @@
             </th>
           </tr>
         </table>
-
       </div>
     </section>
   </body>
