@@ -16,27 +16,15 @@ body {
     margin-top: 100px;
 }
 
-.info-btn {
-    margin-right: 100px;
-    margin-left: 100px;
-}
-
 .contact-img {
     margin-right: 15%;
     margin-left: 15%;
 }
 
-.button {
-    background-color: rgb(255, 255, 255);
-    border: none;
-    color: rgb(0, 0, 0);
+.btn {
     padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
     font-size: 16px;
     width: 350px;
-    cursor: pointer;
     border-radius: 12px;
 }
 

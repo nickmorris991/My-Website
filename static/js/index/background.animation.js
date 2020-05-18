@@ -3,7 +3,7 @@ const ctx = canvas.getContext('2d');
 ctx.canvas.width = window.innerWidth;
 ctx.canvas.height = window.innerHeight;
 
-let particleArray;
+let animArray;
 
 function Particle(x, y, xDirection, yDirection, size, color) {
     this.x = x;
@@ -36,7 +36,7 @@ Particle.prototype.update = function() {
 }
 
 function init() {
-    particleArray = [];
+    animArray = [];
     for (let i=0; i < 100; i++) {
         let color = 'white';
         let size = Math.random() * 20;
@@ -44,7 +44,7 @@ function init() {
         let y = Math.random() * (innerHeight - size * 2);
         let xDirection = (Math.random() * .4) - .2;
         let yDirection = (Math.random() * .4) - .2;
-        particleArray.push(new Particle(x, y, xDirection, yDirection, size, color));
+        animArray.push(new Particle(x, y, xDirection, yDirection, size, color));
     }
 
 }
@@ -53,13 +53,10 @@ function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0,0, innerWidth, innerHeight); 
 
-    for (let i=0; i < particleArray.length; i++) {
-        particleArray[i].update();
+    for (let i=0; i < animArray.length; i++) {
+        animArray[i].update();
     }
 }
-
-init();
-animate();
 
 window.addEventListener('resize',
     function() {
@@ -68,5 +65,8 @@ window.addEventListener('resize',
         init();
     }
 )
+
+init();
+animate();
 
 
