@@ -14,53 +14,51 @@
   </head>
   <body>
     <canvas id="anim-canvas"></canvas>
-    <section id="root">
-      <div id="container">
-        <div id="header" class="primary-cd">
-          <div class="card center" style="width:22rem;">
-            <img class="card-img-top" src="static/img/profile_photo.jpg">
-            <div class="card-header">
-              <h5 class="card-title">Nick Morris</h5>
-              <p class="card-title">Software Engineer</p>
-              <table class="center">
-                <tr>
-                  <th>
-                    <div class="contact-img">
-                      <button class="contact-button" onclick="emailRedirect()"><img class="card-img-top" src="static/img/email-sign.png"></button>
-                    </div>
-                  </th>
-                  <th>
-                    <div class="contact-img">
-                      <button class="contact-button" onclick="githubRedirect()"><img class="card-img-top" src="static/img/github-sign.png"></button>
-                    </div>
-                  </th>
-                  <th>
-                    <div class="contact-img">
-                      <button class="contact-button" onclick="linkedinRedirect()"><img class="card-img-top" src="static/img/linkedin-sign.jpg"></button>
-                    </div>
-                  </th>
-                </tr>
-              </table>
-            </div>
+    <div id="container">
+      <div id="header" class="primary-cd">
+        <div class="card center" style="width:22rem;">
+          <img class="card-img-top" src="static/img/profile_photo.jpg">
+          <div class="card-header">
+            <h5 class="card-title">Nick Morris</h5>
+            <p class="card-title">Software Engineer</p>
+            <table class="center">
+              <tr>
+                <th>
+                  <div class="contact-img">
+                    <button class="contact-button" onclick="emailRedirect()"><img class="card-img-top" src="static/img/email-sign.png"></button>
+                  </div>
+                </th>
+                <th>
+                  <div class="contact-img">
+                    <button class="contact-button" onclick="githubRedirect()"><img class="card-img-top" src="static/img/github-sign.png"></button>
+                  </div>
+                </th>
+                <th>
+                  <div class="contact-img">
+                    <button class="contact-button" onclick="linkedinRedirect()"><img class="card-img-top" src="static/img/linkedin-sign.jpg"></button>
+                  </div>
+                </th>
+              </tr>
+            </table>
           </div>
         </div>
-        <div id="nav-table">
-          <table class="info-btn-table center">
-            <tr>
-              <th>
-                <button class="button info-btn">About Me</button>
-              </th>
-              <th>
-                <button class="button info-btn">Projects</button>
-              </th>
-              <th>
-                <button class="button info-btn">Resume</button>
-              </th>
-            </tr>
-          </table>
-        </div>
       </div>
-    </section>
+      <div id="nav-table">
+        <table class="info-btn-table center">
+          <tr>
+            <th>
+              <button type="button" class="btn btn-light" style="margin-right: 75px;">About Me</button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-light">Projects</button>
+            </th>
+            <th>
+              <button type="button" class="btn btn-light" style="margin-left: 75px;">Resume</button>
+            </th>
+          </tr>
+        </table>
+      </div>
+    </div>
     <script src="static/js/index/background.animation.js"></script>
   </body>
 </html>
