@@ -111,3 +111,11 @@ a.btn-social,
 {
     background-color: #0b96e5;
 }
+.btn-instagram
+{
+    background-color: #FF2DCC;
+}
+.btn-instagram:hover
+{
+    background-color: #E0DE5C;
+}

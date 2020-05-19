@@ -15,5 +15,10 @@ document.getElementById("linkedin-btn").addEventListener("click", () => {
     location.href = 'https://www.linkedin.com/in/nicholas-jacob-morris/';
 });
 
+document.getElementById("instagram-btn").addEventListener("click", () => {
+    location.href = "https://www.instagram.com/nick_morris991/?hl=en";
+});
+
+
 
 
