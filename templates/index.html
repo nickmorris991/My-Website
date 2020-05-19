@@ -10,7 +10,6 @@
     <!-- Local -->
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/background.animation.css">
-    <script src="static/js/index/redirects.js"></script>
   </head>
   <body>
     <canvas id="anim-canvas"></canvas>
@@ -25,17 +24,17 @@
               <tr>
                 <th>
                   <div class="contact-img">
-                    <button class="contact-button" onclick="emailRedirect()"><img class="card-img-top" src="static/img/email-sign.png"></button>
+                    <button class="contact-button" id="email-btn"><img class="card-img-top" src="static/img/email-sign.png"></button>
                   </div>
                 </th>
                 <th>
                   <div class="contact-img">
-                    <button class="contact-button" onclick="githubRedirect()"><img class="card-img-top" src="static/img/github-sign.png"></button>
+                    <button class="contact-button" id="github-btn"><img class="card-img-top" src="static/img/github-sign.png"></button>
                   </div>
                 </th>
                 <th>
                   <div class="contact-img">
-                    <button class="contact-button" onclick="linkedinRedirect()"><img class="card-img-top" src="static/img/linkedin-sign.jpg"></button>
+                    <button class="contact-button" id="linkedin-btn"><img class="card-img-top" src="static/img/linkedin-sign.jpg"></button>
                   </div>
                 </th>
               </tr>
@@ -47,18 +46,19 @@
         <table class="info-btn-table center">
           <tr>
             <th>
-              <button type="button" class="btn btn-light" style="margin-right: 75px;">About Me</button>
+              <button type="button" class="btn btn-light" style="margin-right: 75px;" id="about-me-btn">About Me</button>
             </th>
             <th>
-              <button type="button" class="btn btn-light">Projects</button>
+              <button type="button" class="btn btn-light" id="projects-btn">Projects</button>
             </th>
             <th>
-              <button type="button" class="btn btn-light" style="margin-left: 75px;">Resume</button>
+              <button type="button" class="btn btn-light" style="margin-left: 75px;" id="resume-btn">Resume</button>
             </th>
           </tr>
         </table>
       </div>
     </div>
     <script src="static/js/index/background.animation.js"></script>
+    <script src="static/js/index/redirects.js"></script>
   </body>
 </html>

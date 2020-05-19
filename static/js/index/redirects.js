@@ -1,11 +1,19 @@
-function emailRedirect() {
+document.getElementById("projects-btn").addEventListener("click", () => {
+    location.href = "/projects";
+});
+
+// external
+document.getElementById("email-btn").addEventListener("click", () => {
     location.href = 'mailto:morris.1489@osu.edu';
-}
+});
 
-function githubRedirect() {
+document.getElementById("github-btn").addEventListener("click", () => {
     location.href = 'https://github.com/nickmorris991';
-}
+});
 
-function linkedinRedirect() {
+document.getElementById("linkedin-btn").addEventListener("click", () => {
     location.href = 'https://www.linkedin.com/in/nicholas-jacob-morris/';
-}
+});
+
+
+
