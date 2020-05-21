@@ -1,36 +1,43 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
 body {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(51, 51, 51);
+    font-family: 'DM Mono', monospace;
 }
-
-.center {
+.container {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
 .primary-cd {
     padding-top: 2%;
 }
-
 .info-btn-table {
     margin-top: 100px;
 }
-
 .card-contact-table {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
+.center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
 .btn {
     padding: 15px 32px;
     font-size: 16px;
     width: 350px;
     border-radius: 12px;
+    font-weight: bold;
+    font-size: 22px;
 }
-
+.btn-left {
+    margin-right: 75px;
+}
+.btn-right {
+    margin-left: 75px;
+}
 /* buttons for social media */
 a.btn-social,
 .btn-social

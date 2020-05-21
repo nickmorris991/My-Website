@@ -1,24 +1,21 @@
 body {
-    background-color: rgb(61, 61, 61);
+    background-color: rgb(51, 51, 51);
+    font-family: 'DM Mono', monospace;
 }
-
 .center {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
 .header {
     color: white;
     font-size: 75px;
 }
-
 .sub-header {
     color: white;
     font-size: 25px;
     padding-left: 3rem;
 }
-
 .btn-home {
     padding: 15px 30px;
     font-size: 40px;
@@ -30,7 +27,6 @@ body {
     overflow: hidden;
     outline:none;
 }
-
 .glyphicon-home {
     color: white;
 }

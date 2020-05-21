@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
 }
-
 #anim-canvas {
     position: absolute;
     z-index: -1;

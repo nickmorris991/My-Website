@@ -5,6 +5,7 @@ ctx.canvas.height = window.innerHeight;
 
 let animArray;
 
+
 function Particle(x, y, xDirection, yDirection, size, color) {
     this.x = x;
     this.y = y;
@@ -14,12 +15,14 @@ function Particle(x, y, xDirection, yDirection, size, color) {
     this.color = color;
 }
 
+
 Particle.prototype.draw = function() {
     ctx.beginPath();
     ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
     ctx.fillStyle = this.color;
     ctx.fill();
 }
+
 
 Particle.prototype.update = function() {
     if (this.x + this.size > canvas.width || this.x - this.size < 0) {
@@ -35,6 +38,7 @@ Particle.prototype.update = function() {
     this.draw();
 }
 
+
 function init() {
     animArray = [];
     for (let i=0; i < 100; i++) {
@@ -49,6 +53,7 @@ function init() {
 
 }
 
+
 function animate() {
     requestAnimationFrame(animate);
     ctx.clearRect(0,0, innerWidth, innerHeight); 
@@ -58,6 +63,7 @@ function animate() {
     }
 }
 
+
 window.addEventListener('resize',
     function() {
         canvas.width = innerWidth;
@@ -65,6 +71,7 @@ window.addEventListener('resize',
         init();
     }
 )
+
 
 init();
 animate();
