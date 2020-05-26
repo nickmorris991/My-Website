@@ -3,62 +3,51 @@
   <head>
     <title>Nick Morris</title>
     <link rel="icon" type="img/png" href="static/img/favicon.png">
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Bootstrap assets -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <!-- other -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="static/css/index.css">
     <link rel="stylesheet" href="static/css/background.animation.css">
   </head>
   <body>
     <canvas id="anim-canvas"></canvas>
     <div id="container">
-      <div id="header" class="primary-cd">
-        <div class="card center" style="width:22rem;">
-          <img class="card-img-top" src="static/img/profile-img.jpg">
-          <div class="card-header">
-            <h2 class="card-title">Nick Morris</h2>
-            <h5 class="card-title">Software Engineer in Chicago, IL</h5>
-          </div>
-          <div class="card-contact-table">
-            <table>
-              <tr>
-                <th>
-                  <a href="https://www.linkedin.com/in/nicholas-jacob-morris/" target="_blank" title="linkedin" class="btn-social btn-linkedin" id="linkedin-btn"><i class="fa fa-linkedin"></i></a>
-                </th>
-                <th>
-                  <a href="https://github.com/nickmorris991" target="_blank" title="github" class="btn-social btn-github" id="github-btn"><i class="fa fa-github-alt"></i></a>
-                </th>
-                <th>
-                  <a href="mailto:morris.1489@osu.edu" target="_blank" title="email" class="btn-social btn-email" id="email-btn"><i class="fa fa-envelope"></i></a>
-                </th>
-                <th>
-                  <a href="https://www.instagram.com/nick_morris991/?hl=en" title="instagram" target="_blank" class="btn-social btn-instagram" id="instagram-btn"><i class="fa fa-instagram"></i></a>
-                </th>
-              </tr>
-            </table>
-          </div>
-        </div>
-      </div>
-      <div id="nav-table">
-        <table class="info-btn-table center">
+      <div class="card horiz-center">
+        <img class="card-img-top" src="static/img/profile-img.jpg"><br>
+        <h2 class="card-title name">Nick Morris</h2>
+        <h5 class="card-title desc">Software Engineer in Chicago</h5>
+        <table class="horiz-center">
           <tr>
             <th>
-              <button type="button" class="btn btn-light btn-left" id="about-me-btn">About Me</button>
+              <a href="https://www.linkedin.com/in/nicholas-jacob-morris/" target="_blank" title="linkedin" class="btn-social btn-linkedin" id="linkedin-btn"><i class="fa fa-linkedin"></i></a>
             </th>
             <th>
-              <button type="button" class="btn btn-light" id="projects-btn">Projects</button>
+              <a href="https://github.com/nickmorris991" target="_blank" title="github" class="btn-social btn-github" id="github-btn"><i class="fa fa-github-alt"></i></a>
             </th>
             <th>
-              <button type="button" class="btn btn-light btn-right" id="resume-btn">Resume</button>
+              <a href="mailto:morris.1489@osu.edu" target="_blank" title="email" class="btn-social btn-email" id="email-btn"><i class="fa fa-envelope"></i></a>
+            </th>
+            <th>
+              <a href="https://www.instagram.com/nick_morris991/?hl=en" title="instagram" target="_blank" class="btn-social btn-instagram" id="instagram-btn"><i class="fa fa-instagram"></i></a>
             </th>
           </tr>
         </table>
       </div>
-    </div>
+      <div class="table-wrapper">
+        <table class="info-btn-table horiz-center">
+          <tr>
+            <th> <button type="button" class="btn btn-light" id="projects-btn">Projects</button> </th>
+          </tr>
+          <tr>
+            <th> <button type="button" class="btn btn-light" id="about-me-btn">About Me</button> </th>   
+          </tr>
+          <tr>
+            <th> <button type="button" class="btn btn-light" id="resume-btn">Resume</button> </th>
+          </tr>
+        </table>
+      </div>
+    </div> 
     <script src="static/js/index/background.animation.js"></script>
     <script src="static/js/index/redirects.js"></script>
   </body>

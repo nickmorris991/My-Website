@@ -1,7 +1,7 @@
 const canvas = document.getElementById("anim-canvas");
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
-ctx.canvas.width = window.innerWidth;
-ctx.canvas.height = window.innerHeight;
 
 let animArray;
 

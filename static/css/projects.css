@@ -9,16 +9,11 @@ body {
 }
 .header {
     color: white;
-    font-size: 75px;
-}
-.sub-header {
-    color: white;
-    font-size: 25px;
-    padding-left: 3rem;
+    font-size: 4vw;
 }
 .btn-home {
     padding: 15px 30px;
-    font-size: 40px;
+    font-size: 3vw;
     width: 80px;
     background-color: Transparent;
     background-repeat:no-repeat;
