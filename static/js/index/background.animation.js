@@ -5,7 +5,6 @@ const ctx = canvas.getContext('2d');
 
 let animArray;
 
-
 function Particle(x, y, xDirection, yDirection, size, color) {
     this.x = x;
     this.y = y;
