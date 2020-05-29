@@ -73,3 +73,39 @@ function getRandomColor() {
     }
     return color;
 }
+
+
+function getTreeDirection(alt) {
+    speed = 0.8;
+    direction = {
+        x: 0,
+        y: 0
+    };
+    switch(alt % 6) {
+        case 0:
+            direction.x = 0;
+            direction.y = speed;
+            break;
+        case 1:
+            direction.x = 0;
+            direction.y = -speed;
+            break;
+        case 2:
+            direction.x = speed;
+            direction.y = speed;
+            break;
+        case 3:
+            direction.x = -speed;
+            direction.y = -speed;
+            break;
+        case 4:
+            direction.x = -speed;
+            direction.y = speed;
+            break;
+        case 5:
+            direction.x = speed;
+            direction.y = -speed;
+            break;
+    }
+    return direction;
+}

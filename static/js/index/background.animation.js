@@ -5,9 +5,9 @@ canvas.height = window.innerHeight;
 const ctx = canvas.getContext('2d');
 
 
-let binaryTreeArray;                  // each binary tree representation in this array.
-const nodeSize = 6;                   // size of each node on a tree
-const numOfTrees = 25;                // number of trees to animate
+let binaryTreeArray;     // each binary tree representation in this array.
+const nodeSize = 6;      // size of each node on a tree
+const numOfTrees = 30;   // number of trees to animate
 
 
 function createTrees() {
@@ -17,8 +17,9 @@ function createTrees() {
         let size = Math.random() * 4;
         let x = Math.random() * (innerWidth - size * 2);
         let y = Math.random() * (innerHeight - size * 2);
-        let xDirection = Math.random();
-        let yDirection = Math.random();
+        let dir = getTreeDirection(i);
+        let xDirection = dir.x;
+        let yDirection = dir.y;
         binaryTreeArray.push(new Tree(x, y, xDirection, yDirection, size, color));
     }
 }
@@ -45,4 +46,5 @@ window.addEventListener('resize',
 
 createTrees();
 animate();
+
 

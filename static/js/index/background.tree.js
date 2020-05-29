@@ -22,17 +22,17 @@ Tree.prototype.draw = function() {
 
 
 Tree.prototype.update = function() {
+    // correct off canvas animations (bounce off the screen effect)
     if (this.x > canvas.width || this.x < 0) {
         this.xDirection = -this.xDirection;
     }
-
     if (this.y > canvas.height || this.y < 0) {
         this.yDirection = -this.yDirection;
     }
 
+    // update pos & draw
     this.x += this.xDirection;
     this.y += this.yDirection;
-
     this.draw();
 }
 

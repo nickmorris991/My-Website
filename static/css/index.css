@@ -23,6 +23,7 @@ body {
 }
 .name {
     font-size: 2rem;
+    margin-top: 15px;
 }
 .desc {
     font-size: 1.2rem;
