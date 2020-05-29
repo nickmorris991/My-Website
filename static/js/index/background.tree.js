@@ -1,5 +1,3 @@
-// *** prototype ***
-
 function Tree(x, y, xDirection, yDirection, size, color) {
     this.x = x;                     // root node x pos
     this.y = y;                     // root node y pos
@@ -24,16 +22,18 @@ Tree.prototype.draw = function() {
 
 
 Tree.prototype.update = function() {
-    if (this.x + this.size > canvas.width || this.x - this.size < 0) {
+    if (this.x > canvas.width || this.x < 0) {
         this.xDirection = -this.xDirection;
     }
-    if (this.y + this.size > canvas.height || this.y - this.size < 0) {
+
+    if (this.y > canvas.height || this.y < 0) {
         this.yDirection = -this.yDirection;
     }
 
-    // this.x += this.xDirection;
-    // this.y += this.yDirection;
+    this.x += this.xDirection;
+    this.y += this.yDirection;
 
     this.draw();
 }
+
 

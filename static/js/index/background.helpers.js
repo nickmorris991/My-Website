@@ -1,15 +1,16 @@
 function drawTree(nodeCoords) {
-    var rootAdjustment = 1; // find left & right child of current root
+    let rootAdjustment = 1; // find left & right child of current root
 
     // loop over calculated coordinates, drawing each node & connective branches
-    for (var i=0; i < nodeCoords.length; i++) {
-        var currentRoot = nodeCoords[i];
-        var leftChild = nodeCoords[i+rootAdjustment];
-        var rightChild = nodeCoords[i+rootAdjustment+1];
+    for (let i=0; i < nodeCoords.length; i++) {
+        let currentRoot = nodeCoords[i];
+        let leftChild = nodeCoords[i+rootAdjustment];
+        let rightChild = nodeCoords[i+rootAdjustment+1];
         connectNodes(currentRoot, leftChild, rightChild);
         rootAdjustment++;
     }
 }
+
 
 function connectNodes(currentRoot, leftChild, rightChild) {
     ctx.beginPath();
@@ -28,6 +29,7 @@ function connectNodes(currentRoot, leftChild, rightChild) {
     }
     ctx.fill();
 }
+
 
 function getTreeNodeCoordinates(size, root) {
     var coords = [];         // complete list of coordinates in the tree
@@ -62,3 +64,12 @@ function calculateChildNodePos(node) {
     };
 }
 
+
+function getRandomColor() {
+    var letters = '0123456789ABCDEF';
+    var color = '#';
+    for (var i = 0; i < 6; i++) {
+        color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+}
