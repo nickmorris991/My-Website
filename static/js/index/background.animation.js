@@ -1,78 +1,56 @@
-const canvas = document.getElementById("anim-canvas");
-canvas.width = window.innerWidth;
-canvas.height = window.innerHeight;
-const ctx = canvas.getContext('2d');
+const CANVAS = document.getElementById("anim-canvas");
+CANVAS.width = window.innerWidth;
+CANVAS.height = window.innerHeight;
+const CTX = CANVAS.getContext('2d');
 
-let animArray;
-
-function Particle(x, y, xDirection, yDirection, size, color) {
-    this.x = x;
-    this.y = y;
-    this.xDirection = xDirection;
-    this.yDirection = yDirection;
-    this.size = size;
-    this.color = color;
-}
+let binaryTreeArray;    // each binary tree goes in this array.
+const NODESIZE = 6;     // size of each node on a tree
+const NUMOFTREES = 50;  // number of trees to animate
 
 
-Particle.prototype.draw = function() {
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2, false);
-    ctx.fillStyle = this.color;
-    ctx.fill();
-}
+function createTrees() {
+    binaryTreeArray = [];
+    for (let i=0; i < NUMOFTREES; i++) {
+        // style settings
+        let color = getRandomColor();
+        let size = Math.floor(Math.random() * 4) + 1;
 
-
-Particle.prototype.update = function() {
-    if (this.x + this.size > canvas.width || this.x - this.size < 0) {
-        this.xDirection = -this.xDirection;
+        // set location. Spawning from behind the header-card & index-table
+        let headerRect = document.getElementById("header-card").getBoundingClientRect();
+        let indexTableRect = document.getElementById("index-table").getBoundingClientRect();
+        let rand = Math.random();
+        if (rand > 0.8) rand = rand - .15;
+        let x = (headerRect.left + headerRect.right)/2;
+        let y = (rand * (innerHeight - (innerHeight - indexTableRect.bottom)));
+        
+        // speed and tree creation
+        let vel = getTreeVelocity(i);
+        let xDirection = vel.x;
+        let yDirection = vel.y;
+        binaryTreeArray.push(new Tree(x, y, xDirection, yDirection, size, color));
     }
-    if (this.y + this.size > canvas.height || this.y - this.size < 0) {
-        this.yDirection = -this.yDirection;
-    }
-
-    this.x += this.xDirection;
-    this.y += this.yDirection;
-
-    this.draw();
-}
-
-
-function init() {
-    animArray = [];
-    for (let i=0; i < 100; i++) {
-        let color = 'white';
-        let size = Math.random() * 20;
-        let x = Math.random() * (innerWidth - size * 2);
-        let y = Math.random() * (innerHeight - size * 2);
-        let xDirection = (Math.random() * .4) - .2;
-        let yDirection = (Math.random() * .4) - .2;
-        animArray.push(new Particle(x, y, xDirection, yDirection, size, color));
-    }
-
 }
 
 
 function animate() {
     requestAnimationFrame(animate);
-    ctx.clearRect(0,0, innerWidth, innerHeight); 
+    CTX.clearRect(0,0, innerWidth, innerHeight); 
 
-    for (let i=0; i < animArray.length; i++) {
-        animArray[i].update();
+    for (let i=0; i < binaryTreeArray.length; i++) {
+        binaryTreeArray[i].update();
     }
 }
 
 
 window.addEventListener('resize',
     function() {
-        canvas.width = innerWidth;
-        canvas.height = innerHeight;
-        init();
+        CANVAS.width = innerWidth;
+        CANVAS.height = innerHeight;
+        createTrees();
     }
 )
 
 
-init();
+createTrees();
 animate();
-
 
