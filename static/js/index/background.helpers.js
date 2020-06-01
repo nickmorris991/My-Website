@@ -68,7 +68,7 @@ function getRandomColor() {
 
 
 function getTreeVelocity(alt) {
-    speed = Math.random();
+    speed = Math.random() + 0.2;
     // min speed, no idle trees
     if (speed < 0.2) speed += 0.2; 
     var directions = {
