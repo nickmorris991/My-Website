@@ -5,7 +5,7 @@ const CTX = CANVAS.getContext('2d');
 
 let binaryTreeArray;    // each binary tree goes in this array.
 const NODESIZE = 6;     // size of each node on a tree
-const NUMOFTREES = 40;  // number of trees to animate
+const NUMOFTREES = 50;  // number of trees to animate
 
 
 function createTrees() {
@@ -14,13 +14,12 @@ function createTrees() {
         // style settings
         let color = getRandomColor();
         let size = Math.floor(Math.random() * 4) + 1;
-        // location avoiding screen overflow
-        let rand1 = Math.random();
-        let rand2 = Math.random();
-        if (rand1 < 0.1) rand1 = rand1 + 0.1;
-        if (rand2 < 0.1) rand2 = rand2 + 0.1;
-        let x = (rand1 * (innerWidth - 125));
-        let y = (rand2 * (innerHeight - 125));
+        // set location. Spawning from behind the header-card & index-table
+        let headerRect = document.getElementById("header-card").getBoundingClientRect();
+        let rand = Math.random();
+        if (rand < 0.2) rand = rand + (innerHeight * 0.2);
+        let x = (headerRect.left + headerRect.right)/2;
+        let y = (rand * (innerHeight - (innerHeight * 0.4)));
         // speed and tree creation
         let vel = getTreeVelocity(i);
         let xDirection = vel.x;

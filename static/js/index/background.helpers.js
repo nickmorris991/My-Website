@@ -68,28 +68,19 @@ function getRandomColor() {
 
 
 function getTreeVelocity(alt) {
-    speed = 0.8;
-    direction = {
-        x: 0,
-        y: 0
+    speed = Math.random();
+    // min speed, no idle trees
+    if (speed < 0.2) speed += 0.2; 
+    var directions = {
+        0: { x: speed, y: speed },
+        1: { x: speed, y: -speed },
+        2: { x: -speed, y: speed },
+        3: { x: -speed, y: -speed },
+        4: { x: 0, y: -speed },
+        5: { x: 0, y: speed },
+        6: { x: -speed, y: 0 },
+        7: { x: speed, y: 0 }
     };
-    switch(alt % 4) {
-        case 0:
-            direction.x = speed;
-            direction.y = speed;
-            break;
-        case 1:
-            direction.x = speed;
-            direction.y = -speed;
-            break;
-        case 2:
-            direction.x = -speed;
-            direction.y = speed;
-            break;
-        case 3:
-            direction.x = -speed;
-            direction.y = -speed;
-            break;
-    }
-    return direction;
+    return directions[alt % 8];
 }
+
