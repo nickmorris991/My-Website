@@ -5,7 +5,7 @@ html, body {
     font-family: 'DM Mono', monospace;
 }
 body {
-    background-color: rgb(35,35,35);
+    background-color: rgb(30,30,30);
 }
 .container {
     resize: both;
@@ -102,41 +102,4 @@ body {
 .btn-instagram:hover
 {
     background-color: #E0DE5C;
-}
-/* mobile view */
-@media (max-width: 800px) {
-    .card {
-        position: relative;
-        top: 2rem;
-        width:17rem; height: 29rem;
-    }
-    .name {
-        font-size: 1.4rem;
-    }
-    .desc {
-        font-size: .8rem;
-    }
-    .btn {
-        width: 17rem;
-    }
-}
-@media (max-height: 700px) {
-    .card {
-        position: relative;
-        top: 1rem;
-        width:16rem; height: 27rem;
-    }
-    .name {
-        font-size: 1.3rem;
-    }
-    .desc {
-        font-size: .7rem;
-    }
-    .btn {
-        width: 16rem; height: 3rem;
-        font-size: 1rem;
-    }
-    .info-btn-table {
-        margin-top: 30px;
-    }
 }

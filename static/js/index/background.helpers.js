@@ -14,6 +14,7 @@ function drawTree(nodeCoords) {
 
 function connectNodes(currentRoot, leftChild, rightChild) {
     CTX.beginPath();
+
     // draw node
     CTX.arc(currentRoot[0], currentRoot[1], NODESIZE, 0, Math.PI * 2, false);
 
@@ -58,17 +59,19 @@ function calculateChildNodePos(node) {
 
 
 function getRandomColor() {
-    var letters = '0123456789ABCDEF';
+    var letters = 'ABCDEF';
+    var hexOptions = '123456789ABCDEF';
     var color = '#';
-    for (var i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
+    color += letters[Math.floor(Math.random() * 6)];
+    for (var i = 0; i < 5; i++) {
+        color += hexOptions[Math.floor(Math.random() * 15)];
     }
     return color;
 }
 
 
 function getTreeVelocity(alt) {
-    speed = Math.random() + 0.2;
+    speed = Math.random();
     // min speed, no idle trees
     if (speed < 0.2) speed += 0.2; 
     var directions = {
@@ -76,11 +79,9 @@ function getTreeVelocity(alt) {
         1: { x: speed, y: -speed },
         2: { x: -speed, y: speed },
         3: { x: -speed, y: -speed },
-        4: { x: 0, y: -speed },
-        5: { x: 0, y: speed },
-        6: { x: -speed, y: 0 },
-        7: { x: speed, y: 0 }
+        4: { x: -speed, y: 0 },
+        5: { x: speed, y: 0 }
     };
-    return directions[alt % 8];
+    return directions[alt % 6];
 }
 
