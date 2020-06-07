@@ -1,0 +1,46 @@
+html, body {
+    margin: 0;
+    height: 100%; width: 100%;
+    font-family: 'DM Mono', monospace;
+}
+body {
+    background-color: rgb(25,25,25);
+}
+hr {
+    border-top: 5px solid;
+}
+h1 {
+    color: white;
+    font-size: 4vw;
+}
+.title, .header {
+    color: white;
+    font-size: 4vw;
+    text-align: center;
+}
+.title {
+    display: inline-block;
+}
+.horiz-center {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.btn-home {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding: 15px 30px;
+    padding-top: 20px;
+    font-size: 3vw;
+    width: 2.5em;
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    outline:none;
+}
+.glyphicon-home {
+    color: white;
+}

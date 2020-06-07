@@ -1,13 +1,1 @@
-body {
-    background-color: rgb(30,30,30);
-    font-family: 'DM Mono', monospace;
-}
-h1 {
-    color: white;
-    font-size: 4vw;
-}
-.horiz-center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
+/* will be used to style about page. Current styling is only general and held in site.css to avoid repeat code. */

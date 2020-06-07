@@ -1,21 +1,8 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-html, body {
-    margin: 0;
-    height: 100%; width: 100%;
-    font-family: 'DM Mono', monospace;
-}
-body {
-    background-color: rgb(30,30,30);
-}
 .container {
     resize: both;
     position: relative;
     overflow: auto;
-}
-.horiz-center {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
 }
 .card {
     position: relative;
