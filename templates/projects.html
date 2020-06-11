@@ -20,8 +20,8 @@
         <div class="projects" id="projects">
             {% for project in project_data %}
                 <div class="project">
-                    <p class="project-title">{{ project.title }}</p>
-                    <a href={{project.source}} class="project-source">(source code)</a>
+                    <p class="project-title">{{ project.title }} {{project.emoji}}</p>
+                    <a target="_blank" href={{project.source}} class="project-source">(source code)</a>
                     <p class="project-desc">{{ project.description }}</p>
                     {% for tag in project.tags %}
                         <p class="project-tag">{{ tag }}</p>

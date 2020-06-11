@@ -4,27 +4,32 @@
             "title": "This Website",
             "description": "Personal site I use to show recent projects, interests, hobbies, and provide contact info.",
             "tags": ["Web", "Javascript", "Flask", "Bootstrap", "AWS", "Docker"],
-            "source": "https://github.com/nickmorris991/My-Website"
+            "source": "https://github.com/nickmorris991/My-Website",
+            "emoji": "🤓"
         }, {
             "title": "City Matcher",
             "description": "Android application that matches a users personality & preferences to a big city in the U.S.",
             "tags": ["Mobile", "Android", "Java", "Firebase"],
-            "source": "https://github.com/nickmorris991/City-Matcher"
+            "source": "https://github.com/nickmorris991/City-Matcher",
+            "emoji": "🏙️"
         }, {
             "title": "Messenging App",
-            "description": "Simple terminal based instant messaging service to practice socket programming. Built on TCP/IP stack",
-            "tags": ["Python", "Networking"],
-            "source": "https://github.com/nickmorris991/IM-Application"
+            "description": "Simple terminal based instant messaging service to practice socket programming. Built on TCP/IP stack.",
+            "tags": ["Terminal", "Python", "Networking"],
+            "source": "https://github.com/nickmorris991/IM-Application",
+            "emoji": "💬"
         }, {
             "title": "Mega Man",
             "description": "Replica of the Guts Man level for the original 2D Mega Man. Built with state/behavioral design pattern.",
             "tags": ["Game", "Monogame Engine", "C#"],
-            "source": "https://github.com/nickmorris991/Mega-Man-Game"
+            "source": "https://github.com/nickmorris991/Mega-Man-Game",
+            "emoji": "🎮"
         }, {
             "title": "Urban Rain",
-            "description": "Network scanner, helps evaluate a networks topology. Scans include: UDP, TCP, os detection, service detection, & syn flood module",
-            "tags": ["Python", "Networking", "Team Based"],
-            "source": "https://github.com/nickmorris991/UrbanRain"
+            "description": "Network scanner, helps evaluate a networks topology. Scans include: UDP, TCP, os detection, service detection, & syn flood module.",
+            "tags": ["Terminal", "Python", "Networking", "Team Based"],
+            "source": "https://github.com/nickmorris991/UrbanRain",
+            "emoji": "🌐"
         }
     ]
 }
