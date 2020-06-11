@@ -11,11 +11,11 @@ hr {
 }
 h1 {
     color: white;
-    font-size: 4vw;
+    font-size: 4.8vw;
 }
 .title, .header {
     color: white;
-    font-size: 4vw;
+    font-size: 4.8vw;
     text-align: center;
 }
 .title {
@@ -28,7 +28,7 @@ h1 {
 }
 .btn-home {
     position: absolute;
-    top: 0px;
+    top: .8vw;
     left: 0px;
     padding: 15px 30px;
     padding-top: 20px;

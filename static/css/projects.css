@@ -1,7 +1,33 @@
-p {
-    font-size: 2vw;
+p, a, a:hover, a:visited, a:active {
     color: white;
 }
 .projects {
     margin-left: 15%; margin-right: 15%;
+}
+.project-title {
+    font-size: 2.5vw;
+    font-weight: bold;
+    display: inline-block;
+}
+.project-source {
+    display: inline-block;
+    font-style: italic;
+    font-size: 1.5vw;
+}
+.project-desc {
+    font-size: 2vw;
+    margin-top: 1%; margin-bottom: 3%;
+}
+.project-tag {
+    font-size: 1.4vw;
+    font-weight: bold;
+    display: inline-block;
+    background-color: rgb(107, 97, 97);
+    color: white;
+    border-radius: 8px; 
+    border: 6px solid rgb(107, 97, 97);
+    margin-right: 1%;
+}
+.tags {
+    left: 0; display: inline-block;
 }
