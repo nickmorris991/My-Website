@@ -1,1 +1,7 @@
-/* will be used to style projects page. Current styling is only general and held in site.css to avoid repeat code. */
+p {
+    font-size: 2vw;
+    color: white;
+}
+.projects {
+    margin-left: 15%; margin-right: 15%;
+}

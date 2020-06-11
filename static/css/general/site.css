@@ -4,10 +4,10 @@ html, body {
     font-family: 'DM Mono', monospace;
 }
 body {
-    background-color: rgb(25,25,25);
+    background-color: rgb(20,20,20);
 }
 hr {
-    border-top: 5px solid;
+    border-top: 3px solid;
 }
 h1 {
     color: white;

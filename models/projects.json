@@ -1,0 +1,25 @@
+{
+    "projects": [
+        {
+            "title": "This Website",
+            "description": "Personal site I use to show recent projects, interests, hobbies, and provide contact info.",
+            "tags": ["Web", "Javascript", "Flask", "Bootstrap", "AWS", "Docker"]
+        }, {
+            "title": "City Matcher",
+            "description": "Android application that matches a users personality & preferences to a big city in the U.S.",
+            "tags": ["Mobile", "Android", "Java", "Firebase"]
+        }, {
+            "title": "Messenging App",
+            "description": "Simple terminal based instant messaging service to practice socket programming. Built on TCP/IP stack",
+            "tags": ["Python", "Networking"]
+        }, {
+            "title": "Mega Man",
+            "description": "Replica of the Guts Man level for the original 2D Mega Man. Built with state/behavioral design pattern.",
+            "tags": ["Game", "Monogame", "C#"]
+        }, {
+            "title": "Urban Rain",
+            "description": "Network scanner, helps evaluate a networks topology. Scans include: UDP, TCP, OS_Detection, Service_Detection, & syn_flood module",
+            "tags": ["Python", "Networking", "Team Based"]
+        }
+    ]
+}

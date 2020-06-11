@@ -9,14 +9,26 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="static/css/projects.css">
-        <link rel="stylesheet" href="static/css/site.css">
+        <link rel="stylesheet" href="static/css/general/site.css">
     </head>
     <body>
-        <div class="header">
+        <div class="header" id="header">
             <button class="btn-home" id="index-return-btn"><span class="glyphicon glyphicon-home"></span></button>
             <h1 class="title">Things I've Built</h1>
+            <hr>
         </div>
-        <hr>
+        <div class="projects" id="projects">
+            {% for project in project_data %}
+                <div class="project">
+                    <p>{{ project.title }}</p>
+                    <p>{{ project.description }}</p>
+                    {% for tag in project.tags %}
+                        <p style="display: inline-block;">{{ tag }}</p>
+                    {% endfor %}
+                    <hr>
+                </div>  
+            {% endfor %}
+        </div>
         <script src="static/js/general/redirects.js"></script>
         <script src="static/js/general/borderColoring.js"></script>
     </body>

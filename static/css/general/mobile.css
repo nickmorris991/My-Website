@@ -15,7 +15,7 @@
         width: 17rem;
     }
 }
-@media (max-height: 700px) {
+@media (max-height: 800px) {
     .card {
         position: relative;
         top: 1rem;

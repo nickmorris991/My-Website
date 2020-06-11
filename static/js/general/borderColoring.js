@@ -1,10 +1,12 @@
 var borders = document.getElementsByTagName("HR");
 var i;
 for (i=0; i < borders.length; i++) {
-    borders[i].style.color = getRandomColor();
+    borders[i].style.color = getRandomNeonColor();
 }
 
-function getRandomColor() {
+
+function getRandomNeonColor() {
+    // exclude zero and begin with a letter to avoid dark colors
     var letters = 'ABCDEF';
     var hexOptions = '123456789ABCDEF';
     var color = '#';
@@ -14,3 +16,4 @@ function getRandomColor() {
     }
     return color;
 }
+
