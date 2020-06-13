@@ -1,8 +1,9 @@
-p, a, a:hover, a:visited, a:active {
+p, a, a:hover, a:visited, a:active, a:link {
     color: white;
 }
 .projects {
     margin-left: 15%; margin-right: 15%;
+    margin-top: 3%;
 }
 .project-title {
     font-size: 2.5vw;
@@ -17,6 +18,8 @@ p, a, a:hover, a:visited, a:active {
 .project-desc {
     font-size: 2vw;
     margin-top: 1%; margin-bottom: 3%;
+    font-family: 'Indie Flower', cursive;
+    font-family: 'Source Code Pro', monospace;
 }
 .project-tag {
     font-size: 1.4vw;
@@ -27,7 +30,4 @@ p, a, a:hover, a:visited, a:active {
     border-radius: 8px; 
     border: 6px solid rgb(107, 97, 97);
     margin-right: 0.7%;
-}
-.tags {
-    left: 0; display: inline-block;
 }

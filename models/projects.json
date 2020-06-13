@@ -23,13 +23,13 @@
             "description": "Replica of the Guts Man level for the original 2D Mega Man. Built with state/behavioral design pattern.",
             "tags": ["Game", "Monogame Engine", "C#"],
             "source": "https://github.com/nickmorris991/Mega-Man-Game",
-            "emoji": "🎮"
+            "emoji": "🕹️"
         }, {
             "title": "Urban Rain",
             "description": "Network scanner, helps evaluate a networks topology. Scans include: UDP, TCP, os detection, service detection, & syn flood module.",
             "tags": ["Terminal", "Python", "Networking", "Team Based"],
             "source": "https://github.com/nickmorris991/UrbanRain",
-            "emoji": "🌐"
+            "emoji": "📡"
         }
     ]
 }

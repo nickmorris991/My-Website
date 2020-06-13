@@ -3,7 +3,7 @@ CANVAS.width = window.innerWidth;
 CANVAS.height = window.innerHeight;
 const CTX = CANVAS.getContext('2d');
 
-let binaryTreeArray;    // each binary tree goes in this array.
+let binaryTreeArray;    // each binary tree is pushed here
 const NODESIZE = 6;     // size of each node on a tree
 const NUMOFTREES = 50;  // number of trees to animate
 

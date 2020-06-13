@@ -38,19 +38,20 @@ function getTreeNodeCoordinates(size, root) {
 
     for (var i=0; i < size; i+=1) {
         // get child coordinates of the current node
-        var childNodes = calculateChildNodePos(coords[i]);
+        var childNodes = calculateChildNodePos(coords[i], coords);
 
-        // add them to our collection of nodes for the next row
+        // if we haven't already, add them to our collection of nodes
         coords.push(childNodes.left);
         coords.push(childNodes.right);
     }
-
     return coords;
 }
 
 
-function calculateChildNodePos(node) {
-    let nodeOffset = 40;
+function calculateChildNodePos(node, coords) {
+    let nodeOffset = 40; // distance from each other
+
+    // TODO: if coords contains another node with the same x level, only return the right child to prevent double drawing a node
     return {
         left: [node[0] - nodeOffset, node[1] + nodeOffset],
         right: [node[0] + nodeOffset, node[1] + nodeOffset]

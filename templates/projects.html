@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
         <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Source+Code+Pro:wght@200;300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="static/css/projects.css">
         <link rel="stylesheet" href="static/css/general/site.css">
     </head>
@@ -20,12 +21,18 @@
         <div class="projects" id="projects">
             {% for project in project_data %}
                 <div class="project">
-                    <p class="project-title">{{ project.title }} {{project.emoji}}</p>
-                    <a target="_blank" href={{project.source}} class="project-source">(source code)</a>
-                    <p class="project-desc">{{ project.description }}</p>
-                    {% for tag in project.tags %}
-                        <p class="project-tag">{{ tag }}</p>
-                    {% endfor %}
+                    <div class="p-header">
+                        <p class="project-title">{{ project.title }} {{project.emoji}}</p>
+                        <a target="_blank" href={{project.source}} class="project-source">(source code)</a>
+                    </div>
+                    <div class="p-desc">
+                        <p class="project-desc">{{ project.description }}</p>
+                    </div>
+                    <div class="p-tags">
+                        {% for tag in project.tags %}
+                            <p class="project-tag">{{ tag }}</p>
+                        {% endfor %}
+                    </div>
                     <hr>
                 </div>  
             {% endfor %}

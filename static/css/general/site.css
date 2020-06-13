@@ -3,8 +3,8 @@ html, body {
     height: 100%; width: 100%;
     font-family: 'DM Mono', monospace;
 }
-body {
-    background-color: rgb(20,20,20);
+body, pre {
+    background-color: rgb(15,15,15);
 }
 hr {
     border-top: 3px solid;

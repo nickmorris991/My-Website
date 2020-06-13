@@ -29,7 +29,10 @@
     }
     .btn {
         width: 16rem; height: 3rem;
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .btn-social {
+        height: 50px; width: 50px;
     }
     .info-btn-table {
         margin-top: 30px;

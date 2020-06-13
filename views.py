@@ -1,6 +1,8 @@
-from flask import render_template
+from flask import render_template, jsonify
 from models.processProjects import getProjects
+import os.path as path
 from app import app
+import json
 
 
 @app.route('/')
