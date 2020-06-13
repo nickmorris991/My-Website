@@ -15,14 +15,15 @@ function createTrees() {
         let color = getRandomColor();
         let size = Math.floor(Math.random() * 4) + 1;
 
-        // set location. Spawning from behind the header-card & index-table
-        let headerRect = document.getElementById("header-card").getBoundingClientRect();
-        let indexTableRect = document.getElementById("index-table").getBoundingClientRect();
+        // set location. Spawning from behind the header-card & index-table if both exist
+        let headerCard = document.getElementById("header-card").getBoundingClientRect();
+        let indexTable = document.getElementById("index-table").getBoundingClientRect();
+        let headerDisplayStyle = getComputedStyle(document.getElementById("header-card"), null).display;
         let rand = Math.random();
         if (rand > 0.8) rand = rand - .15;
-        let x = (headerRect.left + headerRect.right)/2;
-        let y = (rand * (innerHeight - (innerHeight - indexTableRect.bottom)));
-        
+        let x = (headerDisplayStyle == "none") ? (indexTable.left + indexTable.right)/2 : (headerCard.left + headerCard.right)/2; 
+        let y = (rand * (innerHeight - (innerHeight - indexTable.bottom)));
+
         // speed and tree creation
         let vel = getTreeVelocity(i);
         let xDirection = vel.x;

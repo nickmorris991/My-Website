@@ -49,9 +49,8 @@ function getTreeNodeCoordinates(size, root) {
 
 
 function calculateChildNodePos(node, coords) {
-    let nodeOffset = 40; // distance from each other
+    var nodeOffset = 40; // distance from each other
 
-    // TODO: if coords contains another node with the same x level, only return the right child to prevent double drawing a node
     return {
         left: [node[0] - nodeOffset, node[1] + nodeOffset],
         right: [node[0] + nodeOffset, node[1] + nodeOffset]

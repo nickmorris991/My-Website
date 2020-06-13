@@ -1,4 +1,4 @@
-/* mobile view */
+/* portrait view */
 @media (max-width: 800px) {
     .card {
         position: relative;
@@ -36,5 +36,18 @@
     }
     .info-btn-table {
         margin-top: 30px;
+    }
+}
+/* landscape view */
+@media (max-height: 500px) {
+    .card {
+        display: none;
+    }
+    .btn {
+        width: 23rem;
+        margin-top: 10px;
+    }
+    body {
+        position: fixed;
     }
 }
