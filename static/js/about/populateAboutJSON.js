@@ -10,7 +10,7 @@ aboutData = {
 				"Coding 💻" : "Recently been working on web based projects / designs.",
 				"Coffee ♨️": "Rankings: espresso, french press, pour over (don't @ me)."
             },
-			"CS Interests": "Mobile & Distributed Systems (lately).",
+			"CS Interests": "Lately, mobile & distributed systems.",
 			"Current Team / Title": "Backend Software Engineer"
 		}
 	]
