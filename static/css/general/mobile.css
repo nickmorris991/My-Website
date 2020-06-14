@@ -43,6 +43,14 @@
     .card {
         display: none;
     }
+    .info-btn-table {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 75vh;
+    }
     .btn {
         width: 23rem;
         margin-top: 10px;
