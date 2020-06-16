@@ -25,9 +25,9 @@ p, a, a:hover, a:visited, a:active, a:link {
     font-size: 1.4vw;
     font-weight: bold;
     display: inline-block;
-    background-color: rgb(107, 97, 97);
+    background-color: rgb(102, 102, 102);
     color: white;
     border-radius: 8px; 
-    border: 6px solid rgb(107, 97, 97);
+    border: 6px solid rgb(102, 102, 102);
     margin-right: 0.7%;
 }

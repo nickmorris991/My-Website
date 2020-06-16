@@ -3,7 +3,6 @@
 }
 pre {
     white-space: pre-wrap; /*  Valid Since CSS 2.1 */
-    font-weight: bold;
     font-size: 1.9vw;
     color: white;
     border: rgb(20,20,20);
