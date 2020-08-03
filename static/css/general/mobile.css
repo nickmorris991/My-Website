@@ -1,41 +1,21 @@
 /* portrait view */
-@media (max-width: 800px) {
+@media (max-height: 750px) {
     .card {
         position: relative;
-        top: 2rem;
-        width:17rem; height: 29rem;
+        top: 0.7rem;
+        width: 16.5rem; height: 27.2rem;
     }
     .name {
         font-size: 1.4rem;
     }
     .desc {
-        font-size: .8rem;
-    }
-    .btn {
-        width: 17rem;
-    }
-}
-@media (max-height: 800px) {
-    .card {
-        position: relative;
-        top: 1rem;
-        width:16rem; height: 27rem;
-    }
-    .name {
-        font-size: 1.3rem;
-    }
-    .desc {
         font-size: .7rem;
     }
     .btn {
-        width: 16rem; height: 3rem;
-        font-size: 0.8rem;
-    }
-    .btn-social {
-        height: 50px; width: 50px;
+        width: 16.5rem;
     }
     .info-btn-table {
-        margin-top: 30px;
+        margin-top: 15px;
     }
 }
 /* landscape view */

@@ -7,14 +7,14 @@
 .card {
     position: relative;
     top: 2rem;
-    width:22rem;
+    width:18rem; height: 32rem;
 }
 .name {
-    font-size: 2rem;
+    font-size: 2.1em;
     margin-top: 15px;
 }
 .desc {
-    font-size: 1.0rem;
+    font-size: 1.2em;
 }
 /* website index */
 .info-btn-table {
@@ -22,9 +22,9 @@
 }
 .btn {
     padding: 15px 22px;
-    width: 44rem;
+    width: 18rem;
     border-radius: 12px;
-    font-size: 1.3em;
+    font-size: 1em;
     font-weight: bold;
     margin-top: 5px;
     background-color: white;
