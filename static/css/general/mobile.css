@@ -1,24 +1,4 @@
-/* portrait view */
-@media (max-height: 750px) {
-    .card {
-        position: relative;
-        top: 0.7rem;
-        width: 16.5rem; height: 27.2rem;
-    }
-    .name {
-        font-size: 1.4rem;
-    }
-    .desc {
-        font-size: .7rem;
-    }
-    .btn {
-        width: 16.5rem;
-    }
-    .info-btn-table {
-        margin-top: 15px;
-    }
-}
-/* landscape view */
+/* landscape view (TODO: update) */
 @media (max-height: 500px) {
     .card {
         display: none;

@@ -3,6 +3,9 @@ html, body {
     height: 100%; width: 100%;
     font-family: 'DM Mono', monospace;
 }
+img {
+    width: auto; height: auto;
+}
 body, pre {
     background-color: rgb(20,20,20);
 }

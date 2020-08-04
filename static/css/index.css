@@ -1,4 +1,6 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
+
 .container {
     resize: both;
     position: relative;
@@ -6,42 +8,44 @@
 }
 .card {
     position: relative;
-    top: 2rem;
-    width:18rem; height: 32rem;
+    top: 4vh;
+    width:8.5cm; height: 16.3cm;
 }
 .name {
-    font-size: 2.1em;
-    margin-top: 15px;
+    margin-top: 0.45cm;
+    font-size: 2rem;
 }
 .desc {
-    font-size: 1.2em;
+    font-size: 1.4rem;
+    font-family: 'Source Code Pro', monospace;
 }
 /* website index */
 .info-btn-table {
-    margin-top: 60px;
+    margin-top: 0.3cm;
 }
-.btn {
-    padding: 15px 22px;
-    width: 18rem;
-    border-radius: 12px;
-    font-size: 1em;
+.index-link {
+    font-size: 1.2rem; 
     font-weight: bold;
-    margin-top: 5px;
-    background-color: white;
+}
+a {
+    color: black;
+}
+a:hover {
+    text-decoration: none;
+    color: black;
 }
 /* contact me btns */
 .btn-social
 {
     border-radius: 50%;
+    height: 1.5cm; width:1.5cm;
+    line-height: 1.5cm;
+    margin: 0.3cm 0.15cm;
     color: #ffffff;
     display: inline-block;
-    height: 54px;
-    line-height: 54px;
-    margin: 8px 4px;
     text-align: center;
     text-decoration: none;
     transition: background-color .3s;
-    width: 54px;
 }
 .btn-social .fa,.btn-social i
 {
