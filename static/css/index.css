@@ -2,45 +2,50 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,500&display=swap');
 
 .container {
-    resize: both;
-    position: relative;
-    overflow: auto;
+    display: flex;
+    justify-content: center;
 }
 .card {
+    width: 28%; height: auto;
     position: relative;
-    top: 4vh;
-    width:8.5cm; height: 16.3cm;
+    margin-top: 2.5vw; margin-bottom: 2.5vw;
 }
 .name {
-    margin-top: 0.45cm;
-    font-size: 2rem;
+    margin-top: 0.73vw;
+    font-size: 1.4rem;
 }
 .desc {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-family: 'Source Code Pro', monospace;
 }
 /* website index */
 .info-btn-table {
-    margin-top: 0.3cm;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
 }
-.index-link {
-    font-size: 1.2rem; 
+.index-link, .final-index-link {
+    font-size: 0.9rem; 
     font-weight: bold;
 }
-a {
+.index-link::after {
+    content: " |";
+}
+.final-index-link:hover, .index-link:hover {
+    color: rgb(75, 75, 75);
+}
+a, a:hover {
     color: black;
 }
 a:hover {
     text-decoration: none;
-    color: black;
 }
-/* contact me btns */
+/* social media btns */
 .btn-social
 {
     border-radius: 50%;
-    height: 1.5cm; width:1.5cm;
-    line-height: 1.5cm;
-    margin: 0.3cm 0.15cm;
+    height: 54px; width: 54px;
+    line-height: 54px;
+    margin: 10px 5px;
     color: #ffffff;
     display: inline-block;
     text-align: center;

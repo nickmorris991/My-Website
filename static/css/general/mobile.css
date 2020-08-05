@@ -1,21 +1,32 @@
-/* landscape view (TODO: update) */
-@media (max-height: 500px) {
+/* portrait view */
+@media (max-width: 1000px) {
     .card {
+        width: 270px; height: 500px;
+    }
+    .name {
+        margin-top: 10px;
+        font-size: 1.3rem;
+    }
+    .desc {
+        font-size: 1rem;
+    }
+    .btn-social {
+        border-radius: 50%;
+        height: 48px; width: 48px;
+        line-height: 48px;
+        margin: 8px 4px;
+    }
+    .index-link, .final-index-link {
+        font-size: 0.8rem; 
+    }
+}
+
+/* landscape view */
+@media (max-height: 500px) {
+    img {
         display: none;
     }
-    .info-btn-table {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        min-height: 75vh;
-    }
-    .btn {
-        width: 23rem;
-        margin-top: 10px;
-    }
-    body {
-        position: fixed;
+    .card {
+        height: 240px;
     }
 }

@@ -2,7 +2,6 @@
 <html lang="en">
   <head>
     <title>Nick Morris</title>
-    <meta http-equiv="ScreenOrientation" content="autoRotate:disabled">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="icon" type="img/png" href="static/img/favicon.png">
@@ -15,25 +14,27 @@
   </head>
   <body>
     <canvas id="anim-canvas"></canvas>
-    <div class="card horiz-center" id="header-card">
-      <img class="card-img-top" src="static/img/profile-img.jpg">
-      <h2 class="card-title name">Nick Morris</h2>
-      <h5 class="card-title desc">Software Engineer in Chicago, IL</h5>
-      <table class="horiz-center">
-        <tr>
-          <th><a href="https://github.com/nickmorris991" target="_blank" title="github" class="btn-social btn-github" id="github-btn"><i class="fa fa-github-alt"></i></a></th>
-          <th><a href="https://www.linkedin.com/in/nicholas-jacob-morris/" target="_blank" title="linkedin" class="btn-social btn-linkedin" id="linkedin-btn"><i class="fa fa-linkedin"></i></a></th>
-          <th><a href="mailto:morris.1489@osu.edu" target="_blank" title="email" class="btn-social btn-email" id="email-btn"><i class="fa fa-envelope"></i></a></th>
-          <th><a href="https://www.instagram.com/nick_morris991/?hl=en" title="instagram" target="_blank" class="btn-social btn-instagram" id="instagram-btn"><i class="fa fa-instagram"></i></a></th>
-        </tr>
-      </table>
-      <table class="info-btn-table horiz-center">
-        <tr>
-          <th><a class="index-link" id="projects-btn" href="/projects">Projects |</a></th>
-          <th><a class="index-link" id="about-btn" href="/about">&ensp;About |</a></th>
-          <th><a class="index-link" id="resume-btn" href="/static/docs/NicholasMorris.pdf" target="_blank">&ensp;Resume</a></th>
-        </tr>
-      </table>
+    <div class="container">
+      <div class="card" id="header-card">
+        <img class="card-img-top" src="static/img/profile-img.jpg">
+        <h2 class="name horiz-center">Nick Morris</h2>
+        <h5 class="desc horiz-center">Software Engineer in Chicago, IL</h5>
+        <table class="horiz-center">
+          <tr>
+            <th><a href="https://github.com/nickmorris991" target="_blank" title="github" class="btn-social btn-github" id="github-btn"><i class="fa fa-github-alt"></i></a></th>
+            <th><a href="https://www.linkedin.com/in/nicholas-jacob-morris/" target="_blank" title="linkedin" class="btn-social btn-linkedin" id="linkedin-btn"><i class="fa fa-linkedin"></i></a></th>
+            <th><a href="mailto:morris.1489@osu.edu" target="_blank" title="email" class="btn-social btn-email" id="email-btn"><i class="fa fa-envelope"></i></a></th>
+            <th><a href="https://www.instagram.com/nick_morris991/?hl=en" title="instagram" target="_blank" class="btn-social btn-instagram" id="instagram-btn"><i class="fa fa-instagram"></i></a></th>
+          </tr>
+        </table>
+        <table class="info-btn-table horiz-center">
+          <tr>
+            <th><a class="index-link" id="projects-btn" href="/projects">Projects</a></th>
+            <th><a class="index-link" id="about-btn" href="/about">&ensp;About</a></th>
+            <th><a class="final-index-link" id="resume-btn" href="/static/docs/NicholasMorris.pdf" target="_blank">&ensp;Resume</a></th>
+          </tr>
+        </table>
+      </div>
     </div>
     <script src="static/js/index/background.tree.js"></script>
     <script src="static/js/index/background.helpers.js"></script>
