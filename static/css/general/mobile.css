@@ -1,10 +1,10 @@
 /* portrait view */
 @media (max-width: 1000px) {
-    .card {
-        width: 270px; height: 500px;
+    .container {
+        width: 290px; height: 495px;
+        min-height: 450px;
     }
     .name {
-        margin-top: 10px;
         font-size: 1.3rem;
     }
     .desc {
@@ -12,9 +12,9 @@
     }
     .btn-social {
         border-radius: 50%;
-        height: 48px; width: 48px;
-        line-height: 48px;
-        margin: 8px 4px;
+        height: 47px; width: 47px;
+        line-height: 47px;
+        margin: 7px 3.5px;
     }
     .index-link, .final-index-link {
         font-size: 0.8rem; 
@@ -26,7 +26,8 @@
     img {
         display: none;
     }
-    .card {
-        height: 240px;
+    .container {
+        height: 215px;
+        max-height: 220px; min-height: 100px;
     }
 }

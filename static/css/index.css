@@ -4,27 +4,27 @@
 .container {
     display: flex;
     justify-content: center;
+    padding-top: 1rem; 
+    width: 17%; height: 61%;
+    min-width: 300px; max-width: 480px;
+    min-height: 520px; max-height: 535px;
 }
-.card {
-    width: 28%; height: auto;
-    position: relative;
-    margin-top: 2.5vw; margin-bottom: 2.5vw;
+.card-content {
+    margin-top: 1rem; margin-bottom: 1rem;
+}
+.card-img {
+    width: auto; height: auto;
 }
 .name {
-    margin-top: 0.73vw;
-    font-size: 1.4rem;
+    font-size: 1.35em;
 }
 .desc {
-    font-size: 1.2rem;
+    font-size: 1.1em;
     font-family: 'Source Code Pro', monospace;
 }
 /* website index */
-.info-btn-table {
-    margin-top: 0.8vw;
-    margin-bottom: 0.8vw;
-}
 .index-link, .final-index-link {
-    font-size: 0.9rem; 
+    font-size: 0.87em; 
     font-weight: bold;
 }
 .index-link::after {
@@ -43,9 +43,9 @@ a:hover {
 .btn-social
 {
     border-radius: 50%;
-    height: 54px; width: 54px;
-    line-height: 54px;
-    margin: 10px 5px;
+    height: 49px; width: 49px;
+    line-height: 49px;
+    margin: 9px 4.5px;
     color: #ffffff;
     display: inline-block;
     text-align: center;
