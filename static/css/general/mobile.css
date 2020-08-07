@@ -1,7 +1,7 @@
 /* portrait view */
 @media (max-width: 1000px) {
     .container {
-        width: 290px; height: 495px;
+        width: 290px; height: 505px;
         min-height: 450px;
     }
     .name {
