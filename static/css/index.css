@@ -6,7 +6,7 @@
     justify-content: center;
     padding-top: 1rem; 
     width: 17%; height: 61%;
-    min-width: 300px; max-width: 480px;
+    min-width: 300px; max-width: 450px;
     min-height: 520px; max-height: 535px;
 }
 .card-content {
@@ -16,15 +16,15 @@
     width: auto; height: auto;
 }
 .name {
-    font-size: 1.35em;
+    font-size: min(1.35em, 22px);
 }
 .desc {
-    font-size: 1.1em;
+    font-size: min(1.1em, 19px);
     font-family: 'Source Code Pro', monospace;
 }
 /* website index */
 .index-link, .final-index-link {
-    font-size: 0.87em; 
+    font-size: min(0.87em, 15px); 
     font-weight: bold;
 }
 .index-link::after {

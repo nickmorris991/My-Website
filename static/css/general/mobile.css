@@ -5,10 +5,10 @@
         min-height: 450px;
     }
     .name {
-        font-size: 1.3rem;
+        font-size: 1.3em;
     }
     .desc {
-        font-size: 1rem;
+        font-size: 1em;
     }
     .btn-social {
         border-radius: 50%;
@@ -17,7 +17,7 @@
         margin: 7px 3.5px;
     }
     .index-link, .final-index-link {
-        font-size: 0.8rem; 
+        font-size: 0.8em; 
     }
 }
 
