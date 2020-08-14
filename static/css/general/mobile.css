@@ -1,23 +1,11 @@
 /* portrait view */
 @media (max-width: 1000px) {
     .container {
-        width: 290px; height: 505px;
-        min-height: 450px;
+        padding-top: 1rem; padding-bottom: 1rem;
     }
-    .name {
-        font-size: 1.3em;
-    }
-    .desc {
-        font-size: 1em;
-    }
-    .btn-social {
-        border-radius: 50%;
-        height: 47px; width: 47px;
-        line-height: 47px;
-        margin: 7px 3.5px;
-    }
-    .index-link, .final-index-link {
-        font-size: 0.8em; 
+    .card {
+        width: 275px; height: 500px;
+        max-height: none; max-width: none;
     }
 }
 
@@ -26,8 +14,8 @@
     img {
         display: none;
     }
-    .container {
-        height: 215px;
-        max-height: 220px; min-height: 100px;
+    .card {
+        height: 200px;
+        max-height: none; max-width: none;
     }
 }

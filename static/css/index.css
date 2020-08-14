@@ -4,10 +4,12 @@
 .container {
     display: flex;
     justify-content: center;
-    padding-top: 1rem; 
-    width: 17%; height: 61%;
-    min-width: 300px; max-width: 450px;
-    min-height: 525px; max-height: 535px;
+    padding-top: 2.5rem; padding-bottom: 2.5rem;
+}
+.card {
+    background-color: rgb(245, 245, 245);
+    width: 27%; height: 61%;
+    max-width: 275px; max-height: 500px;
 }
 .card-content {
     margin-top: 1rem; margin-bottom: 1rem;
@@ -16,15 +18,16 @@
     width: auto; height: auto;
 }
 .name {
-    font-size: min(1.35em, 22px);
+    font-size: 1.3em;
 }
 .desc {
-    font-size: min(1.1em, 19px);
+    font-size: 1em;
+    padding-left: 10%; padding-right: 10%;
     font-family: 'Source Code Pro', monospace;
 }
 /* website index */
 .index-link, .final-index-link {
-    font-size: min(0.87em, 15px); 
+    font-size: 0.8em;
     font-weight: bold;
 }
 .index-link::after {
@@ -43,9 +46,9 @@ a:hover {
 .btn-social
 {
     border-radius: 50%;
-    height: 49px; width: 49px;
-    line-height: 49px;
-    margin: 9px 4.5px;
+    height: 47px; width: 47px;
+    line-height: 47px;
+    margin: 7px 3.5px;
     color: #ffffff;
     display: inline-block;
     text-align: center;
