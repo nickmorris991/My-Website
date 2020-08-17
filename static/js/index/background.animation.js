@@ -16,11 +16,11 @@ function createTrees() {
         let size = Math.floor(Math.random() * 4) + 1;
 
         // set location. Spawning from behind the header-card
+        let largestTreePXHeight = 100;
         let headerCard = document.getElementById("header-card").getBoundingClientRect();
-        let rand = Math.random();
-        if (rand > 0.8) rand = rand - .15;
+        let yHeaderRange = headerCard.bottom - headerCard.top
         let x = (headerCard.left + headerCard.right)/2; 
-        let y = (rand * (innerHeight - (innerHeight - headerCard.bottom)));
+        let y = (Math.random() * (yHeaderRange - largestTreePXHeight)) + headerCard.top;
 
         // speed and tree creation
         let vel = getTreeVelocity(i);

@@ -1,20 +1,26 @@
-/* portrait view */
-@media (max-width: 1000px) {
+/* portrait (tablets too) */
+@media (max-width: 1200px) {
     .container {
         padding-top: 1rem; padding-bottom: 1rem;
     }
     .card {
-        width: 275px; height: 500px;
+        width: 220px; height: 430px;
         max-height: none; max-width: none;
     }
-    .project-title, .project-source, .project-desc {
+    .btn-social {
+        height: 41px; width: 41px;
+        line-height: 41px;
+    }
+    .project-title, .project-source {
         font-size: 2.5vw;
+    }
+    .project-desc {
+        font-size: 2.2vw;
     }
     .project-tag {
         font-size: 1.8vw;
     }
 }
-
 /* landscape view */
 @media (max-height: 500px) {
     img {
