@@ -1,0 +1,22 @@
+# Basic workflow to start cicd for my website
+
+name: Build and Deploy
+
+on:
+  push:
+    branches: [ master ]
+
+# will add deploy job later, just starting with build for now
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the Source
+      - uses: actions/checkout@master
+      - name: Build and Push to DockerHub
+      - uses: docker/build-push-action@master
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: nickmorris991/nickmorr-dot-is
+          tag_with_ref: true
