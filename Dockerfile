@@ -5,9 +5,8 @@ RUN pip --no-cache install --upgrade pip
 WORKDIR /app
 COPY . /app
 
-RUN  pip --no-cache install -r requirements.txt 
+RUN  pip --no-cache install -r requirements.txt
 
 EXPOSE 5000
 
-ENTRYPOINT [ "python" ] 
-CMD [ "app.py" ] 
+CMD ["gunicorn", "-c", "config.py", "wsgi:app"]

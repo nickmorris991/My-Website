@@ -1,9 +1,13 @@
 **/__pycache__/
 venv/
 
-# Elastic Beanstalk Files
+# Elastic Beanstalk
 .ebignore
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
 !.elasticbeanstalk/*.global.yml
 
+# all logs
+*.log
+error.log
+access.log
