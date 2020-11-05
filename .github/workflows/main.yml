@@ -11,12 +11,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout the Source
-        uses: actions/checkout@master
-      - name: Build and Push to DockerHub
-        uses: docker/build-push-action@master
+      - name: Setup QEMU
+        uses: docker/setup-qemu-action/@master
+      - name: Setup Docker Buildx
+        uses: docker/setup-buildx-action@master
+      - name: Login to DockerHub
+        uses: docker/login-action@master
         with:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
-          repository: nickmorris991/nickmorr-dot-is
-          tag_with_ref: true
+      - name: Build and Push to Dockerhub
+        id: docker_build
+        uses: docker/build-push-action@master
+        with:
+          push: true
+          tags: nickmorris991/nickmorr-dot-is:latest
+      - name: Image Digest Log
+        run: echo ${{ steps.docker_build.outputs.digest }}
