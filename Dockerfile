@@ -9,4 +9,5 @@ RUN  pip --no-cache install -r requirements.txt
 
 EXPOSE 5000
 
-CMD ["gunicorn", "-c", "config.py", "wsgi:app"]
+ENTRYPOINT [ "gunicorn" ]
+CMD ["-c", "config.py", "wsgi:app"]
