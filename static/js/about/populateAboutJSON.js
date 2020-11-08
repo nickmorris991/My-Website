@@ -7,7 +7,7 @@ aboutData = {
 				"Running 🏃" : "Newbie, jogging ~20 days/month since corona started.",
 				"Cooking 👨‍🍳" : "Favorite cuisine: Indian, Italian, Chinese, American.",
 				"Basketball 🏀" : "Mostly play to maintain my DiCaprio-esque dad bod.",
-				"Coding 💻" : "Recently been working on web-based projects / designs.",
+				"Coding 💻" : "Recently been working with React.js and AWS on projects.",
 				"Coffee ♨️": "Rankings: espresso, french press, pour over, other stuff."
       }
 		}
