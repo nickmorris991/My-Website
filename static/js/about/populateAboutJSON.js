@@ -9,8 +9,7 @@ aboutData = {
 				"Basketball 🏀" : "Mostly play to maintain my DiCaprio-esque dad bod.",
 				"Coding 💻" : "Recently been working on web-based projects / designs.",
 				"Coffee ♨️": "Rankings: espresso, french press, pour over, other stuff."
-            },
-			"CS Interests": "Lately, mobile & distributed systems."
+      }
 		}
 	]
 };
