@@ -1,12 +1,10 @@
-# Basic workflow to start cicd for my website
-
-name: Build and Deploy
+name: Build
 
 on:
   push:
     branches: [ master ]
 
-# will add deploy job later, just starting with build for now
+# deployment stage handled by aws
 jobs:
   build:
     runs-on: ubuntu-latest

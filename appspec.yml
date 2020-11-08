@@ -1,3 +1,4 @@
+# deployment config
 version: 0.0
 os: linux
 files:
@@ -7,5 +8,3 @@ hooks:
   AfterInstall:
     - location: scripts/deploy.sh
       runas: root
-  
-
