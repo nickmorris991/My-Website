@@ -2,5 +2,10 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ec2-user/
+    destination: /home/nickmorr-dot-is/
+hooks:
+  AfterInstall:
+    - location: scripts/deploy.sh
+      runas: root
+  
 
