@@ -20,6 +20,12 @@
     .project-tag {
         font-size: 1.8vw;
     }
+    .overview {
+        margin-left: 2%; margin-right: 2%;
+    }
+    pre {
+        font-size: 1.8vw;
+    }
 }
 /* landscape view */
 @media (max-height: 500px) {

@@ -1,7 +1,7 @@
 aboutData = {
 	"At A Glance": [
 		{
-			"Education": "CS @ The Ohio State University (2020)",
+			"Education": "CS @ The Ohio State University (class of 2020)",
 			"Current City": "Chicago, IL",
 			"Hobbies": {
 				"Running 🏃" : "Newbie, jogging ~20 days/month since corona started.",
